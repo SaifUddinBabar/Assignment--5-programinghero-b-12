@@ -82,3 +82,17 @@ container.innerHTML = ""
 
 
 
+// copy button
+document.getElementById('cardbox').addEventListener("click", function(e) {
+    if (e.target.classList.contains("btn1")) {
+        
+           const contact =  e.target.parentNode.parentNode.children[2]
+            const contactNUmber = contact.querySelector(".contact").innerText
+            navigator.clipboard.writeText(contactNUmber);
+
+          
+
+    }
+});
+
+
