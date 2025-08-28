@@ -95,4 +95,13 @@ document.getElementById('cardbox').addEventListener("click", function(e) {
     }
 });
 
+// love button 
+document.getElementById('cardbox').addEventListener("click", function(e) {
+    if (e.target.classList.contains("lovebtn")) {
+        const heartElement = document.getElementById('heartnumber');
+        const heartcount = Number(heartElement.innerText) 
+        const totalheart = heartcount + 1;
+        heartElement.innerText = totalheart;
+    }
+});
 
