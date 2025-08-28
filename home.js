@@ -68,6 +68,15 @@ container.appendChild(newdiv)
     }
 });
 
+// clearbtn
+getElement("clearbtn").addEventListener('click',function()
+{
+ const container = getElement('containerforhistory')
+container.innerHTML = ""
+
+})
+ 
+
 
 
 
